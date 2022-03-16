@@ -17,6 +17,9 @@ h2 {
   font-size: 30px;
   line-height: 48px;
 }
+h6 {
+  text-align: center;
+}
 ul {
   margin: 0 0 10px;
   padding: 0;
