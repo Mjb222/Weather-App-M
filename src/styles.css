@@ -59,10 +59,20 @@ li {
 .units {
   position: relative;
   top: -60px;
-  right: -25px;
+  right: -45px;
   font-size: 16px;
-  margin-bottom: 0px;
+  text-decoration: none;
 }
 .weather-icon {
   margin-top: -80px;
+}
+
+.units .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.units .active:hover {
+  text-decoration: none;
+  cursor: default;
 }
