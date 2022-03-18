@@ -19,9 +19,8 @@ h2 {
   font-weight: bold;
 }
 h6 {
-  max-width: 650px;
-  margin-top: -15px;
   text-align: center;
+  margin-top: -15px;
 }
 ul {
   margin: 0 0 10px;
@@ -51,9 +50,11 @@ li {
   border-radius: 100px;
 }
 .button {
-  border-radius: 30px;
-  margin: 0 auto;
-  margin-left: 0px;
+  border-radius: 100px;
+  margin-top: 5px;
+}
+.searchbutton {
+  border-radius: 100px;
 }
 .units {
   position: relative;
