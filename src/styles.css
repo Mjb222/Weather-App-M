@@ -5,17 +5,18 @@ body {
 
 h1 {
   text-align: center;
-  font-weight: 500;
-  margin: 0;
+  font-weight: bold;
+  margin-top: 10px;
   font-size: 30px;
   line-height: 48px;
 }
 h2 {
   text-align: center;
-  font-weight: 500;
-  margin: 0;
+
+  margin-top: 20px;
   font-size: 30px;
   line-height: 48px;
+  font-weight: bold;
 }
 h6 {
   max-width: 650px;
@@ -60,4 +61,7 @@ li {
   right: -25px;
   font-size: 16px;
   margin-bottom: 0px;
+}
+.weather-icon {
+  margin-top: -80px;
 }
