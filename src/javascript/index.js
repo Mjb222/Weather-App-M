@@ -22,7 +22,34 @@ function formatDate(date) {
   let day = days[dayIndex];
   return `${days[dayIndex]} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thru", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+          <div class="col-2">
+            <div class = "w-date">${day}20🌤 </div>
+              <img src ="" alt =""
+              width = "36" />
+              <div class = "w-temp">
+                <span class = "w-temp-max">
+                  18°
+                </span> <span class = "w-temp-min">
+               12°
+               </span>
+                  </div>
+                   </div>
+                  
+                  
+                   `;
+  });
 
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
@@ -82,6 +109,7 @@ let button = document.querySelector(".button");
 button.addEventListener("click", getCurrentPosition);
 
 search("New York");
+displayForecast();
 
 function convertToFahrenheit(event) {
   event.preventDefault();
