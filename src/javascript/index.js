@@ -129,31 +129,3 @@ let button = document.querySelector(".button");
 button.addEventListener("click", getCurrentPosition);
 
 search("New York");
-
-function convertToFahrenheit(event) {
-  event.preventDefault();
-
-  let temperatureElement = document.querySelector("#temperature");
-  celsius.classList.remove("active");
-  fahrenheit.classList.add("active");
-
-  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-}
-
-function convertToCelsius(event) {
-  event.preventDefault();
-
-  let temperatureElement = document.querySelector("#temperature");
-  celsius.classList.add("active");
-  fahrenheit.classList.remove("active");
-  temperatureElement.innerHTML = Math.round(celsiusTemp);
-}
-
-let celsiusTemp = null;
-
-let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", convertToFahrenheit);
-
-let celsius = document.querySelector("#celsius");
-celsius.addEventListener("click", convertToCelsius);
