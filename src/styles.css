@@ -63,6 +63,10 @@ li {
   font-size: 16px;
   text-decoration: none;
 }
+.units a {
+  font-size: 16px;
+  text-decoration: none;
+}
 .weather-icon {
   margin-top: -80px;
 }
